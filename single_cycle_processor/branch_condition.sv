@@ -13,8 +13,8 @@ always_comb begin
         case (br_type)
             3'b000: br_taken = (rg1 == rg2);  // BEQ
             3'b001: br_taken = (rg1 != rg2);  // BNE
-            3'b100: br_taken = (rg1 < rg2);   // BLT
-            3'b101: br_taken = (rg1 >= rg2);  // BGE
+            3'b101: br_taken = (rg1 < rg2);   // BLT
+            3'b100: br_taken = (rg1 >= rg2);  // BGE
             3'b110: br_taken = (rg1 < rg2);   // BLTU
             3'b111: br_taken = (rg1 >= rg2);  // BGEU
             3'b010: br_taken = 1'b0;
